@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Dashboard</h2>
+        <a href="{% url 'apply' %}">New Application</a>
+        <a href="{% url 'view_status' %}">View Status</a>
+    </div>
+</body>
+</html>
